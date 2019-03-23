@@ -34,7 +34,7 @@ class HrSpider(scrapy.Spider):
         # 职位名称, 职位类别, 发布时间信息
         # 1. 获取包含职位信息的标签列表
         trs = response.xpath('//*[@id="position"]/div[1]/table/tr')[1:-1]
-        # print(len(trs))
+        print(len(trs))
         # tbody: 是浏览器在渲染的时候自动添加的, 在响应页面中没有tbody.
         # 2. 遍历标签列表, 获取需要的数据
         for tr in trs:
