@@ -26,7 +26,7 @@ class HrSpider(scrapy.Spider):
     name = 'hr'
     allowed_domains = ['tencent.com']
 
-    #   3.1. 完善起始URL
+    #   3.1.  完善起始URL
     start_urls = ['https://hr.tencent.com/position.php']
 
     def parse(self, response):
